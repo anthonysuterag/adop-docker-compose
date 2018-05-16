@@ -98,7 +98,7 @@ fi
 
 # Source all the variables that were written to the secrets file
 echo "Sourcing variables from platform.secrets.sh file..."
-source platform.secrets.sh
+source ./platform.secrets.sh
 
 # Check the version of the secrets file template
 if [[ -z $VERSION_ID ]] || [[ $VERSION_ID != $(git log -1 --format="%H" HEAD platform.secrets.sh.example) ]]; then
